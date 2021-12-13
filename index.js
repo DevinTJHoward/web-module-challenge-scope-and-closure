@@ -100,17 +100,21 @@ function finalScore(inning, numInning){
     Home: Home, Away: Away
   }
 }
-console.log(finalScore(inning, 9));
+//console.log(finalScore(inning, 9));
+//psudo comments insert here
 
 /* ⚾️⚾️⚾️ Task 4: getInningScore() ⚾️⚾️⚾️
 Use the getInningScore() function below to do the following:
   1. Receive a callback function - you will pass in the inning function from task 2 as your argument 
   2. Return an object with a score for home and a score for away that populates from invoking the inning callback function */
 
-function getInningScore(/*Your Code Here */) {
-  /*Your Code Here */
+function getInningScore(inning) {
+ return {
+   Home: inning(),
+   Away: inning()
+ }
 }
-
+//console.log(getInningScore(inning)); remember you can leave them blank when working with numbers with math.random\floor\ect.
 
 /* ⚾️⚾️⚾️ Task 5: scoreboard() ⚾️⚾️⚾️
 Use the scoreboard function below to do the following:
