@@ -29,10 +29,17 @@ console.log(processFirstItem(['foo','bar'],function(str){return str+str}));
   
   1. What is the difference between counter1 and counter2?
   
-  2. Which of the two uses a closure? How can you tell?
+  (The one defference that I can see is the first counter (count) is being declared inside of the function counterMaker whereas the 2nd is being delcared outside of the function.) (Counter 1 also has a nested function inside of another function)
   
+  2. Which of the two uses a closure? How can you tell?
+
+  (Counter 1 uses a closeure, & I can tell because of the function that is bundled together with references to its lexical environment.)
+
+
   3. In what scenario would the counter1 code be preferable? In what scenario would 
      counter2 be better?  
+
+     (I think counter1 would be more preferable when you have inheritances and repaetable code that would be used later like upgrading a character inside a video game, where as counter2 would be more useful when you are useing the code to log info like  keeping a score like in a baseball game.)
 */
 
 // counter1 code
